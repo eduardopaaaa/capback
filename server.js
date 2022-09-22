@@ -83,10 +83,10 @@ app.listen(PORT, () => console.log("Listening on port:", PORT));
 
 // TO RUN LOCAL, UNCOMMENT BELLOW
 
-mongoose.connect('mongodb://localhost:27017/bugs')
-mongoose.connection.once('open', () => {
-    console.log('connected to mongodb...');
-})
-app.listen(3000, () => {
-  console.log('listening...');
-})
+// mongoose.connect('mongodb://localhost:27017/bugs')
+// mongoose.connection.once('open', () => {
+//     console.log('connected to mongodb...');
+// })
+// app.listen(3000, () => {
+//   console.log('listening...');
+// })
