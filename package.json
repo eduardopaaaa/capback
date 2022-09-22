@@ -1,0 +1,30 @@
+{
+  "name": "capback",
+  "engines": {
+    "node": "18.8.0"
+  },
+  "version": "1.0.0",
+  "description": "Backend for Capstone project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardopaaaa/capback.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardopaaaa/capback/issues"
+  },
+  "homepage": "https://github.com/eduardopaaaa/capback#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.6.1"
+  }
+}
