@@ -4,7 +4,7 @@ const schema = new mongoose.Schema({
     name: String,
     type: String,
     task: String,
-    date: Date,
+    date: String,
     importance: String,
     completed: Boolean
 
