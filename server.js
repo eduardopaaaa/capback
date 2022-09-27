@@ -47,11 +47,14 @@ app.use(express.static("public"));
 //app.use(express.urlencoded({ extended: false })); // extended: false - does not allow nested objects in query strings
 app.use(express.json()); // returns middleware that only parses JSON - may or may not need it depending on your project
 
+
+
 app.get("/", (req, res) => {
 	theSchema.find({}, (err, findCard) => {
 		res.json(findCard);
 	});
 });
+
 
 app.post("/create", (req, res) => {
 	theSchema.create(req.body, (err, createdCard) => {
@@ -59,22 +62,24 @@ app.post("/create", (req, res) => {
 	});
 });
 
-app.patch("/update/:id", (req, res) => {
-	theSchema.findByIdAndUpdate(
-		req.params.id,
-		req.body,
-		{ new: true },
-		(err, updateCard) => {
-			res.json(updateCard);
-		}
-	);
-});
-
 app.delete("/delete/:id", (req, res) => {
 	theSchema.findByIdAndRemove(req.params.id, (err, deleteCard) => {
 		res.json(deleteCard);
 	});
 });
+
+// app.patch("/update/:id", (req, res) => {
+// 	theSchema.findByIdAndUpdate(
+// 		req.params.id,
+// 		req.body,
+// 		{ new: true },
+// 		(err, updateCard) => {
+// 			res.json(updateCard);
+// 		}
+// 	);
+// });
+
+
 
 //___________________
 //Listener
