@@ -1,8 +1,7 @@
 {
   "name": "capback",
   "engines": {
-    "node": "18.8.0",
-    "npm" : "8.18.0"
+    "node": "18.8.0"
   },
   "version": "1.0.0",
   "description": "Backend for Capstone project",
